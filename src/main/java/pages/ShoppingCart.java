@@ -5,10 +5,10 @@ import org.openqa.selenium.WebDriver;
 
 public class ShoppingCart {
     private WebDriver driver;
-    private By shoppingCart = By.className("shopping_cart_container");
+
     private By shoppingCartBadge = By.className("shopping_cart_container");
-    private By buttonContinueShopping = By.className("continue-shopping");
-    private By buttonCheckout = By.name("Checkout");
+    private By buttonContinueShopping = By.id("continue-shopping");
+    private By buttonCheckout = By.id("checkout");
 
     public ShoppingCart(WebDriver driver) {
         this.driver = driver;
